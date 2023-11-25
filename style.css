@@ -1,81 +1,99 @@
 .container {
-    display: flex; /* Usamos flexbox para dividir la pantalla en dos columnas */
-    height: 100vh; /* El contenedor ocupa todo el alto de la pantalla */
-  }
+  display: flex; /* Usamos flexbox para dividir la pantalla en dos columnas */
+  height: 100vh; /* El contenedor ocupa todo el alto de la pantalla */
+}
 
-  .chat-list {
-    width: 25%; /* La lista de chats ocupa el 30% del ancho de la pantalla */
-    overflow-y: scroll; /* La lista de chats tiene un scroll vertical */
-    background-color: #f0f0f0; /* El fondo de la lista de chats es gris claro */
-  }
+.chat-list {
+  width: 25%; /* La lista de chats ocupa el 30% del ancho de la pantalla */
+  overflow-y: scroll; /* La lista de chats tiene un scroll vertical */
+  background-color: #f0f0f0; /* El fondo de la lista de chats es gris claro */
+}
 
-  .chat-item {
-    display: flex; /* Cada elemento de chat usa flexbox para alinear la imagen y el texto */
-    font-family: 'Raleway', sans-serif;
-    /* border: black solid; */
-    align-items: center; /* La imagen y el texto se alinean verticalmente */
-    padding-top: 15px; /* Cada elemento de chat tiene un espacio de 10px alrededor */
-    padding-bottom: 15px;
-    padding-left: 15px;
-    border-bottom:2px solid #BEC1BB; /* Cada elemento de chat tiene un borde inferior gris */
-    
-  }
+.chat-item {
+  display: flex; /* Cada elemento de chat usa flexbox para alinear la imagen y el texto */
+  font-family: "Raleway", sans-serif;
+ 
+  align-items: center; /* La imagen y el texto se alinean verticalmente */
+  padding-top: 15px; /* Cada elemento de chat tiene un espacio de 10px alrededor */
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-bottom: 2px solid #bec1bb; /* Cada elemento de chat tiene un borde inferior gris */
+}
 
-  
+.chat-item img {
+  width: 60px; /* La imagen de cada elemento de chat tiene un ancho de 50px */
+  height: 60px; /* La imagen de cada elemento de chat tiene un alto de 50px */
+  border-radius: 50%; /* La imagen de cada elemento de chat es circular */
+  margin-right: 15px; /* La imagen de cada elemento de chat tiene un margen derecho de 10px */
+}
 
-  .chat-item img {
-    width: 60px; /* La imagen de cada elemento de chat tiene un ancho de 50px */
-    height: 60px; /* La imagen de cada elemento de chat tiene un alto de 50px */
-    border-radius: 50%; /* La imagen de cada elemento de chat es circular */
-    margin-right: 15px; /* La imagen de cada elemento de chat tiene un margen derecho de 10px */
-  }
+.chat-window {
+  width: 75%; /* La ventana de chat ocupa el 70% del ancho de la pantalla */
 
-  .chat-window {
-    width: 75%; /* La ventana de chat ocupa el 70% del ancho de la pantalla */
-    background-color: #A491D2; /* El fondo de la ventana de chat es morado claro */
-    display: flex; /* La ventana de chat usa flexbox para dividir el espacio en tres secciones */
-    flex-direction: column; /* La ventana de chat tiene una dirección vertical */
-  }
+  display: flex; /* La ventana de chat usa flexbox para dividir el espacio en tres secciones */
+  flex-direction: column; /* La ventana de chat tiene una dirección vertical */
+}
 
-  .chat-header {
-    height: 20%; /* El encabezado de la ventana de chat ocupa el 20% del alto de la ventana */
-    display: flex; /* El encabezado de la ventana de chat usa flexbox para centrar el contenido */
-    justify-content: center; /* El contenido del encabezado se centra horizontalmente */
-    align-items: center; /* El contenido del encabezado se centra verticalmente */
-  }
+.chat-header {
+  margin: 2%;
+  display: flex; /* El encabezado de la ventana de chat usa flexbox para centrar el contenido */
+  justify-content: center; /* El contenido del encabezado se centra horizontalmente */
+  align-items: center; /* El contenido del encabezado se centra verticalmente */
+}
 
-  .chat-header h1 {
-    color: white; /* El texto del encabezado es blanco */
-    font-size: 36px; /* El texto del encabezado tiene un tamaño de 36px */
-  }
+.chat-header h1 {
+  margin: 0%;
+  font-size: 60px; /* El texto del encabezado tiene un tamaño de 36px */
+  height: fit-content;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
 
-  .chat-body {
-    height: 70%; /* El cuerpo de la ventana de chat ocupa el 70% del alto de la ventana */
-    display: flex; /* El cuerpo de la ventana de chat usa flexbox para centrar el contenido */
-    justify-content: center; /* El contenido del cuerpo se centra horizontalmente */
-    align-items: center; /* El contenido del cuerpo se centra verticalmente */
-  }
+.chat-body {
+  height: 100%; /* El cuerpo de la ventana de chat ocupa el 70% del alto de la ventana */
+  display: flex; /* El cuerpo de la ventana de chat usa flexbox para centrar el contenido */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.chat-body img {
+  width: 30%;
+}
 
-  .chat-body p {
-    color: white; /* El texto del cuerpo es blanco */
-    font-size: 24px; /* El texto del cuerpo tiene un tamaño de 24px */
-  }
+.chat-body p {
+  text-align: center;
+  margin: 0%;
+  font-size: 20px; /* El texto del cuerpo tiene un tamaño de 24px */;
+  font-family: "Raleway", sans-serif;
+}
 
-  .chat-footer {
-    height: 15%; /* El pie de la ventana de chat ocupa el 10% del alto de la ventana */
-    display: flex; /* El pie de la ventana de chat usa flexbox para centrar el contenido */
-    justify-content: center; /* El contenido del pie se centra horizontalmente */
-    align-items: center; /* El contenido del pie se centra verticalmente */
-    border-bottom: 2px solid #BEC1BB;
-  }
+.chat-footer {
+  height: 15%; /* El pie de la ventana de chat ocupa el 10% del alto de la ventana */
+  display: flex; /* El pie de la ventana de chat usa flexbox para centrar el contenido */
+  justify-content: center; /* El contenido del pie se centra horizontalmente */
+  align-items: center; /* El contenido del pie se centra verticalmente */
+  border-bottom: 2px solid #bec1bb;
+}
 
-  .chat-footer button {
-    width: 200px; /* El botón del pie tiene un ancho de 200px */
-    height: 50px; /* El botón del pie tiene un alto de 50px */
-    border: none; /* El botón del pie no tiene borde */
-    background-color: #A491D2; /* El botón del pie es morado oscuro */
-    color: white; /* El texto del botón es blanco */
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px; /* El texto del botón tiene un tamaño de 18px */
-  }
+.chat-footer button {
+  width: 200px; /* El botón del pie tiene un ancho de 200px */
+  height: 50px; /* El botón del pie tiene un alto de 50px */
+  border: none; /* El botón del pie no tiene borde */
+  background-color: #a491d2; /* El botón del pie es morado oscuro */
+  color: white; /* El texto del botón es blanco */
+  font-family: "Raleway", sans-serif;
+  font-size: 18px; /* El texto del botón tiene un tamaño de 18px */
+}
 
+#pgris {
+  font-size: 15px;
+}
+.nombmargen {
+  margin: 0px;
+}
+
+#icons {
+  margin-left: 40%;
+  font-size: 25px;
+}
